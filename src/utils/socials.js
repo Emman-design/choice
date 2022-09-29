@@ -18,6 +18,6 @@ export const socials = [
   },
   {
     icon: '/images/linkedIn_icon.png',
-    link: '/#',
+    link: 'www.linkedin.com/in/emmanuelakoja',
   },
 ];
