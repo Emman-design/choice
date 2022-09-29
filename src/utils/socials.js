@@ -8,16 +8,16 @@ export const socials = [
     link: '/#',
   },
   {
-    icon: '/images/google_icon.png',
-    link: '/#',
+    icon: '/images/github_icon.png',
+    link: 'https://github.com/Emman-design/',
   },
 
   {
     icon: '/images/twitter_icon.png',
-    link: '/#',
+    link: 'https://twitter.com/@4909_emmanuel/',
   },
   {
     icon: '/images/linkedIn_icon.png',
-    link: 'www.linkedin.com/in/emmanuelakoja',
+    link: 'https://www.linkedin.com/in/emmanuelakoja/',
   },
 ];
