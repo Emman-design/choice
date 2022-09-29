@@ -148,7 +148,7 @@ const Home = () => {
               fontSize={['1.5em', '1.5em', '2em']}
               fontWeight="bold"
             >
-              Fahimeh Ebrahimi
+              Emmanuel Akoja
             </Heading>
             <Image
               src="/images/choice.jpeg"
