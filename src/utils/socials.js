@@ -8,7 +8,7 @@ export const socials = [
     link: '/#',
   },
   {
-    icon: '/images/github_icon.png',
+    icon: '/images/git.png',
     link: 'https://github.com/Emman-design/',
   },
 
