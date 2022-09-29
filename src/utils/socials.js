@@ -22,6 +22,6 @@ export const socials = [
   },
   {
     icon: '/images/cv_icon.png',
-    link: '/#',
+    link: 'https://github.com/Emman-design/choice/blob/main/public/pdf/Emmanuel_Akoja_Resume%20(1).pdf',
   },
 ];
