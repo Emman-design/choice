@@ -20,4 +20,8 @@ export const socials = [
     icon: '/images/linkedin_icon.png',
     link: 'https://www.linkedin.com/in/emmanuelakoja/',
   },
+  {
+    icon: '/images/cv_icon.png',
+    link: '/#',
+  },
 ];
