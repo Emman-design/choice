@@ -2,26 +2,47 @@ export const socials = [
   {
     icon: '/images/location_icon.png',
     link: '/#',
+    external: true,
   },
-  {
-    icon: '/images/email_icon.png',
-    link: '/#',
-  },
+  // {
+  //   icon: '/images/email_icon.png',
+  //   link: '/#',
+  //   external: true,
+  // },
   {
     icon: '/images/git.png',
     link: 'https://github.com/Emman-design/',
+    external: true,
   },
 
   {
     icon: '/images/twitter_icon.png',
     link: 'https://twitter.com/@4909_emmanuel/',
+    external: true,
   },
   {
     icon: '/images/linkedin_icon.png',
     link: 'https://www.linkedin.com/in/emmanuelakoja/',
+    external: true,
   },
   {
     icon: '/images/cv_icon.png',
-    link: 'https://github.com/Emman-design/choice/blob/main/public/pdf/Emmanuel_Akoja_Resume%20(1).pdf',
+    link: '/pdf/resume.pdf',
+    external: false,
+  },
+  {
+    icon: '/images/instagram_icon.svg',
+    link: '/#',
+    external: true,
+  },
+  {
+    icon: '/images/facebook_icon.svg',
+    link: '/#',
+    external: true,
+  },
+  {
+    icon: '/images/mail_icon.png',
+    link: 'mailto:youremail@domain.com',
+    external: false,
   },
 ];

@@ -19,6 +19,7 @@ import { education } from '../../utils/education';
 import { publications } from '../../utils/publications';
 import { teachingHistory } from '../../utils/teaching';
 import { services } from '../../utils/services';
+import { projects } from '../../utils/projects';
 
 const Home = () => {
   // Menu toggle
@@ -159,18 +160,65 @@ const Home = () => {
               P.hD. Student of Computer Science Louisiana State University
             </Text>
 
-            <Flex>
+            <Flex justifyContent="space-between" width={['95%', '90%', '80%']}>
               {socials.map((media, i) => {
-                return (
-                  <Link key={i} href={media.link} isExternal>
-                    <Image
-                      src={media.icon}
-                      mr="1em"
-                      width="22px"
-                      height="22px"
-                    />
-                  </Link>
-                );
+                if (i < 4) {
+                  return (
+                    <Link
+                      key={i}
+                      href={
+                        media.external && media.link.startsWith('https://')
+                          ? media.link
+                          : media.external && !media.link.startsWith('https://')
+                          ? 'https://' + media.link
+                          : media.link
+                      }
+                      isExternal={media.external}
+                    >
+                      <Image
+                        src={media.icon}
+                        mr="1em"
+                        width="22px"
+                        height="22px"
+                      />
+                    </Link>
+                  );
+                } else {
+                  return;
+                }
+              })}
+            </Flex>
+
+            <Flex
+              mt=".5em"
+              justifyContent="space-between"
+              width={['95%', '90%', '80%']}
+            >
+              {socials.map((media, i) => {
+                if (i >= 4) {
+                  return (
+                    <Link
+                      key={i}
+                      href={
+                        media.external && media.link.startsWith('https://')
+                          ? media.link
+                          : media.external && !media.link.startsWith('https://')
+                          ? 'https://' + media.link
+                          : media.link
+                      }
+                      isExternal={media.external}
+                    >
+                      <Image
+                        src={media.icon}
+                        mr="1em"
+                        width="22px"
+                        height="22px"
+                      />
+                    </Link>
+                  );
+                } else {
+                  return;
+                }
               })}
             </Flex>
           </Box>
@@ -181,7 +229,29 @@ const Home = () => {
             <Heading fontSize={['1.3em', '1.5em', '1.7em']} fontWeight="bold">
               About me
             </Heading>
-            <Text my="1em">{bio}</Text>
+            <Text my="1em">
+              {bio.about}
+              <Link
+                href={
+                  bio.linkUrl.startsWith('https://')
+                    ? bio.linkUrl
+                    : 'https://' + bio.linkUrl
+                }
+                isExternal
+                color="blue.400"
+              >
+                {bio.linkText}
+              </Link>
+            </Text>
+            <Link
+              href="/pdf/resume.pdf"
+              isExternal
+              color="blue.400"
+              download="Emmanuel Akoja's Resume"
+              fontWeight="bold"
+            >
+              See Resume
+            </Link>
             <Box width="100%" height="1px" my="1.5em" bgColor="gray.400"></Box>
 
             <Heading
@@ -220,7 +290,15 @@ const Home = () => {
                     <Heading fontSize="1em" fontWeight="bold">
                       {pub.title}
                     </Heading>
-                    <Link href={pub.link} color="blue.400" isExternal>
+                    <Link
+                      href={
+                        pub.link.startsWith('https://')
+                          ? pub.link
+                          : 'https://' + pub.link
+                      }
+                      color="blue.400"
+                      isExternal
+                    >
                       {'   '}
                       [Link]
                     </Link>
@@ -261,7 +339,6 @@ const Home = () => {
               fontSize={['1.3em', '1.5em', '1.7em']}
               fontWeight="bold"
               mb=".8em"
-              ref={projectsRef}
             >
               Professional Services
             </Heading>
@@ -277,6 +354,42 @@ const Home = () => {
                       return <ListItem key={i}>{level}</ListItem>;
                     })}
                   </UnorderedList>
+                </Box>
+              );
+            })}
+
+            <Box width="100%" height="1px" my="1.5em" bgColor="gray.400"></Box>
+
+            <Heading
+              fontSize={['1.3em', '1.5em', '1.7em']}
+              fontWeight="bold"
+              mb=".8em"
+              ref={projectsRef}
+            >
+              Projects
+            </Heading>
+
+            {projects.map((project, i) => {
+              return (
+                <Box key={i} my=".8em">
+                  <Flex>
+                    <Heading fontSize="1em" fontWeight="bold">
+                      {project.title}
+                    </Heading>
+                    <Link
+                      href={
+                        project.link.startsWith('https://')
+                          ? project.link
+                          : 'https://' + project.link
+                      }
+                      color="blue.400"
+                      isExternal
+                    >
+                      {'   '}
+                      [Link]
+                    </Link>
+                  </Flex>
+                  <Text my=".2em">{project.base}</Text>
                 </Box>
               );
             })}
