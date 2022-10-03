@@ -1,14 +1,12 @@
 export const teachingHistory = [
   {
-    title: 'Louisiana State University (Graduate Teaching Assistant)',
+    title: 'Louisiana State University (Graduate Assistant)',
     levels: [
-      'Operating System (Spring 2018, Fall 2018, Spring 2019)',
-      'Stats & Graph MATLAB (Spring 2019)',
-      'Numerical Methods (Spring 2019)',
+      'Staff Training Tableau Prep & Tableau Desktop (Summer 2021)',
     ],
   },
   {
-    title: 'Amirkabir University of Technology (Graduate Teaching Assistant)',
-    levels: [' Business Process Re-Engineering (Spring 2015)'],
+    title: 'Austin Peay State University (Graduate Teaching Assistant)',
+    levels: [' Inferential Statistics (Spring 2018 - Spring 2019)'],
   },
 ];
