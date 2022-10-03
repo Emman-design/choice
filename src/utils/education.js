@@ -1,14 +1,14 @@
 export const education = [
   {
     degree: 'PhD in Computer Science',
-    from: 'Louisiana State University (Spring 2018 - Present, Louisiana, US)',
+    from: 'Louisiana State University (Fall 2020 - Present, Louisiana, US)',
   },
   {
-    degree: 'MSc in Information Technology Engineering',
-    from: 'Amirkabir University of Technology, Tehran, Iran (Sep 2013 - Oct 2015, Tehran, Iran)',
+    degree: 'MSc in Computer Science and Quantitative Methods',
+    from: 'Austin peay State University (Aug 2017 - May 2019, Clarksville, TN)',
   },
   {
-    degree: 'BSc in Information Technology Engineering',
-    from: 'Amirkabir University of Technology, Tehran, Iran (Sep 2009 - Sep 2013, Tehran, Iran)',
+    degree: 'BSc in MAthematics',
+    from: 'University of ilorin (Sep 2011 - May 2015, Ilorin, Nigeria)',
   },
 ];
