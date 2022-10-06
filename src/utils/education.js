@@ -5,10 +5,10 @@ export const education = [
   },
   {
     degree: 'MSc in Computer Science and Quantitative Methods',
-    from: 'Austin peay State University (Aug 2017 - May 2019, Clarksville, TN)',
+    from: 'Austin Peay State University (Aug 2017 - May 2019, Clarksville, TN)',
   },
   {
-    degree: 'BSc in MAthematics',
-    from: 'University of ilorin (Sep 2011 - May 2015, Ilorin, Nigeria)',
+    degree: 'BSc in Mathematics',
+    from: 'University of Ilorin (Sep 2011 - May 2015, Ilorin, Nigeria)',
   },
 ];
