@@ -158,6 +158,9 @@ const Home = () => {
             />
             <Text my=".6em">
               P.hD. Student of Computer Science Louisiana State University
+              Office: Coates Hall B16
+              Phone: (931) 266 5605
+              Email: eakoja1@lsu.edu
             </Text>
 
             <Flex justifyContent="space-between" width={['95%', '90%', '80%']}>
