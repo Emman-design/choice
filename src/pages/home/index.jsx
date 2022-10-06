@@ -20,6 +20,7 @@ import { publications } from '../../utils/publications';
 import { teachingHistory } from '../../utils/teaching';
 import { services } from '../../utils/services';
 import { projects } from '../../utils/projects';
+import { newsData } from '../../utils/news';
 
 const Home = () => {
   // Menu toggle
@@ -157,19 +158,17 @@ const Home = () => {
               width={['100%', '95%', '90%']}
             />
             <Text my=".6em">
-              P.hD. Student of Computer Science Louisiana State University 
+              P.hD. Student of Computer Science Louisiana State University
             </Text>
-            <Text my=".06em">
-              Office: Coates Hall B16
-            </Text>
-            <Text my=".06em">
-              Phone: (931) 266 5605
-            </Text>
-            <Text my=".06em">
-              Email: eakoja1@lsu.edu
-            </Text>
-            
-            <Flex justifyContent="space-between" width={['95%', '90%', '80%']}>
+            <Text my=".06em">Office: Coates Hall B16</Text>
+            <Text my=".06em">Phone: (931) 266 5605</Text>
+            <Text my=".06em">Email: eakoja1@lsu.edu</Text>
+
+            <Flex
+              justifyContent="space-between"
+              width={['95%', '90%', '60%']}
+              mt="1em"
+            >
               {socials.map((media, i) => {
                 if (i < 4) {
                   return (
@@ -199,9 +198,9 @@ const Home = () => {
             </Flex>
 
             <Flex
-              mt=".5em"
+              mt="1em"
               justifyContent="space-between"
-              width={['95%', '90%', '80%']}
+              width={['95%', '90%', '60%']}
             >
               {socials.map((media, i) => {
                 if (i >= 4) {
@@ -230,6 +229,48 @@ const Home = () => {
                 }
               })}
             </Flex>
+
+            <Box
+              borderRadius=".4em"
+              border="1px solid #d6d6d6"
+              boxShadow="2xl"
+              p="1em"
+              mt="2em"
+            >
+              <>
+                <Heading fontSize="1.4em">Recent News</Heading>
+                {newsData.map((news, i) => {
+                  return (
+                    <Box key={i} my="1.2em">
+                      <Flex>
+                        <Heading fontSize="1em" fontWeight="bold">
+                          {news.title.length > 25
+                            ? news.title.slice(0, 25) + '...'
+                            : news.title}
+                        </Heading>
+                        <Link
+                          href={
+                            news.link.startsWith('https://')
+                              ? news.link
+                              : 'https://' + news.link
+                          }
+                          color="blue.400"
+                          isExternal
+                        >
+                          {'   '}
+                          [Link]
+                        </Link>
+                      </Flex>
+                      <Text my=".2em">
+                        {news.desc.length > 50
+                          ? news.desc.slice(0, 50) + '...'
+                          : news.desc}
+                      </Text>
+                    </Box>
+                  );
+                })}
+              </>
+            </Box>
           </Box>
 
           {/* Main Inner Section */}
@@ -239,7 +280,17 @@ const Home = () => {
               About me
             </Heading>
             <Text my="1em">
-              {bio.about}
+              I am a Ph.D student of Computer Science at Louisiana State
+              University. I work with{' '}
+              <Link href="https://google.com" color="blue.400" isExternal>
+                Dr. Andrew Webb
+              </Link>{' '}
+              on mobile augmented reality to improve interaction and
+              consequently well-being. My research interests include augmented
+              reality, virtual reality, and mixed reality. Currently, I am
+              expanding my knowledge in the above mentioned area. Meanwhile, I
+              have a depth knowledge and years of experience in the area of data
+              analysis and visualization.
               <Link
                 href={
                   bio.linkUrl.startsWith('https://')
