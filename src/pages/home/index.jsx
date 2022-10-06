@@ -159,13 +159,13 @@ const Home = () => {
             <Text my=".6em">
               P.hD. Student of Computer Science Louisiana State University 
             </Text>
-            <Text my=".1em">
+            <Text my=".06em">
               Office: Coates Hall B16
             </Text>
-            <Text my=".1em">
+            <Text my=".06em">
               Phone: (931) 266 5605
             </Text>
-            <Text my=".1em">
+            <Text my=".06em">
               Email: eakoja1@lsu.edu
             </Text>
             
