@@ -156,7 +156,7 @@ const Home = () => {
               borderRadius="0.4em"
               width={['100%', '95%', '90%']}
             />
-            <Text my=".6em">
+            <Text my="1.6em">
               P.hD. Student of Computer Science Louisiana State University
               Office: Coates Hall B16
               Phone: (931) 266 5605
