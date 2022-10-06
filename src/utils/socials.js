@@ -32,17 +32,17 @@ export const socials = [
   },
   {
     icon: '/images/instagram_icon.svg',
-    link: '/#',
+    link: 'https://instagram.com/akojaemmanuel',
     external: true,
   },
   {
     icon: '/images/facebook_icon.svg',
-    link: '/#',
+    link: 'https://www.facebook.com/akoja.h.emmanuel',
     external: true,
   },
   {
     icon: '/images/mail_icon.png',
-    link: 'mailto:youremail@domain.com',
+    link: 'mailto:eakoja1@lsu.edu',
     external: false,
   },
 ];
