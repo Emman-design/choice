@@ -32,12 +32,12 @@ export const socials = [
   },
   {
     icon: '/images/instagram_icon.svg',
-    link: 'https://instagram.com/akojaemmanuel',
+    link: 'https://instagram.com/akojaemmanuel/',
     external: true,
   },
   {
     icon: '/images/facebook_icon.svg',
-    link: 'https://www.facebook.com/akoja.h.emmanuel',
+    link: 'https://www.facebook.com/akoja.h.emmanuel/',
     external: true,
   },
   {
