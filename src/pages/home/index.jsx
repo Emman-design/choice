@@ -156,13 +156,19 @@ const Home = () => {
               borderRadius="0.4em"
               width={['100%', '95%', '90%']}
             />
-            <Text my="1.6em">
-              P.hD. Student of Computer Science Louisiana State University
+            <Text my=".6em">
+              P.hD. Student of Computer Science Louisiana State University 
+            </Text>
+            <Text my=".6em">
               Office: Coates Hall B16
+            </Text>
+            <Text my=".6em">
               Phone: (931) 266 5605
+            </Text>
+            <Text my=".6em">
               Email: eakoja1@lsu.edu
             </Text>
-
+            
             <Flex justifyContent="space-between" width={['95%', '90%', '80%']}>
               {socials.map((media, i) => {
                 if (i < 4) {
