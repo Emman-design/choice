@@ -1,24 +1,16 @@
 export const services = [
   {
-    title: 'Shadow Program Committee',
+    title: 'Data Analysis',
     levels: [
-      "Mining Software Repositories (MSR'21 and MSR'22)",
-      'International Conference on Software Engineering Demonstrations (ICSE Demo)',
+      "Expert in the use of several statistical tools",
+      'Reach out for your data analysis project',
     ],
   },
   {
-    title: 'Reviewer',
+    title: 'Tutoring',
     levels: [
-      'IEEE Transactions on Software Engineering (TSE)',
+      'I provide statistics tutoring service for all levels',
       'Requirement Engineering (RE)',
-    ],
-  },
-  {
-    title: 'Student Volunteer',
-    levels: [
-      "International Requirement Engineering Conference (RE'21)",
-      "International Conference on Software Engineering (ICSE'21)",
-      "International Symposium on Software Testing and Analysis (ISSTA'20)",
     ],
   },
 ];
