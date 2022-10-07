@@ -291,29 +291,7 @@ const Home = () => {
               expanding my knowledge in the above mentioned area. Meanwhile, I
               have a depth knowledge and years of experience in the area of data
               analysis and visualization.
-              <Link
-                href={
-                  bio.linkUrl.startsWith('https://')
-                    ? bio.linkUrl
-                    : 'https://' + bio.linkUrl
-                }
-                isExternal
-                color="blue.400"
-              >
-                {bio.linkText}
-              </Link>
-              
-              <Link
-                href={
-                  bio.linkUrl.startsWith('https://')
-                    ? bio.linkUrl
-                    : 'https://' + bio.linkUrl
-                }
-                isExternal
-                color="blue.400"
-              >
-                {bio.linkText}
-              </Link>
+    
 
             </Text>
             <Link
