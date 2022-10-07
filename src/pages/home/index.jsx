@@ -302,6 +302,19 @@ const Home = () => {
               >
                 {bio.linkText}
               </Link>
+              
+              <Link
+                href={
+                  bio.linkUrl.startsWith('https://')
+                    ? bio.linkUrl
+                    : 'https://' + bio.linkUrl
+                }
+                isExternal
+                color="blue.400"
+              >
+                {bio.linkText}
+              </Link>
+
             </Text>
             <Link
               href="/pdf/resume.pdf"
