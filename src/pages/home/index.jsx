@@ -282,7 +282,7 @@ const Home = () => {
             <Text my="1em">
               I am a Ph.D student of Computer Science at Louisiana State
               University. I work with{' '}
-              <Link href="https://google.com" color="blue.400" isExternal>
+              <Link href="https://csc.lsu.edu/~webb/" color="blue.400" isExternal>
                 Dr. Andrew Webb
               </Link>{' '}
               on mobile augmented reality to improve interaction and
