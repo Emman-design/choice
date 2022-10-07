@@ -290,7 +290,13 @@ const Home = () => {
               reality, virtual reality, and mixed reality. Currently, I am
               expanding my knowledge in the above mentioned area. Meanwhile, I
               have a depth knowledge and years of experience in the area of data
-              analysis and visualization.
+              analysis and visualization. Meet other amazing mentors {' '}
+              <Link href="https://csc.lsu.edu/~mahmoud/" color="blue.400" isExternal>
+                Dr. Anas Mahmoud
+              </Link>{' '} {' '}
+              <Link href="https://csc.lsu.edu/~msun/" color="blue.400" isExternal>
+                Dr. Mingxuan Sun
+              </Link>{' '}
     
 
             </Text>
