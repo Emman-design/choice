@@ -288,12 +288,12 @@ const Home = () => {
               on mobile augmented reality to improve interaction and
               consequently well-being. My research interests include augmented
               reality, virtual reality, and mixed reality. Currently, I am
-              expanding my knowledge in the above mentioned area. Meanwhile, I
+              expanding my knowledge in Human-Computer Interaction. Also, I
               have a depth knowledge and years of experience in the area of data
               analysis and visualization. Meet other mentors {' '}
               <Link href="https://csc.lsu.edu/~mahmoud/" color="blue.400" isExternal>
                 Dr. Anas Mahmoud
-              </Link>{' '} {','}
+              </Link>{' '} {', '}
               <Link href="https://csc.lsu.edu/~msun/" color="blue.400" isExternal>
                 Dr. Mingxuan Sun
               </Link>{' '}
