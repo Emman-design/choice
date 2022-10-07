@@ -2,7 +2,7 @@ export const newsData = [
   {
     title: '09/27/22 Paper Submitted',
     desc: 'IEEE BigComp2023',
-    link: 'http://www.bigcomputing.org/',
+    link: 'https://www.bigcomputing.org/',
   },
 
   {
